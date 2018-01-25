@@ -4,6 +4,7 @@ LABEL EMAIL="IT_TEAM <it@itopplus.com>"
 
 COPY ./redis.conf /etc/redis.conf
 COPY itopplusRedis.sh /usr/local/bin/itopplusRedis.sh
+COPY ./rc.local /etc/rc.local
 
 WORKDIR /usr/local/bin
 RUN chmod 755 itopplusRedis.sh
