@@ -1,10 +1,10 @@
-FROM alpine:3.4
-RUN apk add --no-cache redis sed bash
+FROM itopplus/redis:1.0.6
+# RUN apk add --no-cache redis sed bash
 LABEL EMAIL="IT_TEAM <it@itopplus.com>"
 COPY ./redis.conf /etc/redis.conf
-COPY itopplusRedis.sh /usr/local/bin/itopplusRedis.sh
+# COPY itopplusRedis.sh /usr/local/bin/itopplusRedis.sh
 WORKDIR /usr/local/bin
-RUN mkdir /data
-RUN chmod 755 itopplusRedis.sh
+# RUN mkdir /data
+# RUN chmod 755 itopplusRedis.sh
 CMD ["./itopplusRedis.sh"]
 
