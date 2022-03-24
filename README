@@ -1,8 +1,10 @@
 For Bash/Linux User Just
+  ./gencert-redis.sh
   ./build.sh for build itopplus_Redis
   ./run.sh
 
 For Windows User
+  ./gencert-redis.sh
   ./build.sh
   ./run.sh
   I'm not sure about $(pwd) in run.sh should be change to $(pwd -w).
